@@ -1,3 +1,14 @@
+## Задание 2
+
+Сверстайте страницу по макету.
+
+- реализация должна быть написана нативно (только css и html) или с использованием React (React + css modules/tailwind);
+- верстка должна быть адаптивной (резиновой) и поддерживать breakpoint'ы с 320px до 1920px;
+- верстка должна быть pixel perfect;
+- макет предоставляет только дизайн для desktop страницы, для tablet и mobile необходимо проявить немного фантазии.
+
+https://www.figma.com/file/Ie6w1AeY7wT3pKUT0SaoQY/Infinizai?type=design&node-id=0%3A1&mode=design&t=UcTVJGucUj2qd1ux-1
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

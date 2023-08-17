@@ -1,0 +1,22 @@
+.header {
+  outline: 1px solid coral;
+  padding-top: 27px;
+  color: #fff;
+  background: linear-gradient(to right, #000 54.5%, #57b8ff 0%);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.menuUl {
+  display: flex;
+  justify-content: space-between;
+  max-width: 715px;
+}
+.menuLi {
+  color: red;
+}
+.menuLi2 {
+  margin-right: 60px;
+}
