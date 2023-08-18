@@ -9,15 +9,20 @@ import classNames from 'classnames/bind';
 import { Button1 } from '../Button1';
 import { ShoppingCart } from '../ShoppingCart';
 import { nanoid } from 'nanoid';
+import { menuData } from '../../App';
 
-export function Header() {
-  const menuData = [
-    { id: 'fff', name: 'Home', href: '#', isAcive: true },
-    { id: 'fff', name: 'About', href: '#', isAcive: false },
-    { id: 'fff', name: 'Team', href: '#', isAcive: false },
-    { id: 'fff', name: 'Shop', href: '#', isAcive: false },
-    { id: 'fff', name: 'Pages', href: '#', isAcive: false },
-  ].map((item) => ({ ...item, id: nanoid() }));
+interface Props {
+  page: string;
+  isSBOpen: boolean;
+  setIsSBOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export function Header({ page, isSBOpen, setIsSBOpen }: Props) {
+  const homeMData = menuData.map((item) =>
+    item.name === page ? { ...item, isActive: true } : { ...item, isActive: false }
+  );
+
+  console.log(menuData);
 
   return (
     <header className={styles.header}>
@@ -33,10 +38,10 @@ export function Header() {
             <li className={cx(styles.menuLi, styles.menuLi2)}>Team</li>
             <li className={cx(styles.menuLi, styles.menuLi2)}>Shop</li>
           <li className={cx(styles.menuLi)}>Pages</li> */}
-            {menuData.map((item) => (
+            {homeMData.map((item) => (
               <li key={item.id} className={cx(styles.menuLi, styles.menuLi2)}>
                 <a
-                  className={cx(styles.menuA, { [styles.active]: item.isAcive })}
+                  className={cx(styles.menuA, { [styles.active]: item.isActive })}
                   href={item.href}
                 >
                   {item.name}
@@ -49,9 +54,15 @@ export function Header() {
             <ShoppingCart />
           </div>
           <Button1 />
-          <div className={styles.menuIcon}>
+          <button
+            className={styles.menuIcon}
+            onClick={() => {
+              setIsSBOpen(!isSBOpen);
+              console.log('click');
+            }}
+          >
             <Menu />
-          </div>
+          </button>
         </div>
       </Layout>
     </header>

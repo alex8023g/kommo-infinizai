@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './home.module.css';
 import { Header } from '../../components/Header';
 import { Layout } from '../../components/Layout';
@@ -6,11 +6,13 @@ import { ReactComponent as Flame } from '../../img/flame.svg';
 import { Button2 } from '../../components/Button2';
 import { Link } from 'react-router-dom';
 import cx from 'classnames';
+import { SideBar } from '../../components/SideBar';
 
 export function Home() {
+  const [isSBOpen, setIsSBOpen] = useState(false);
   return (
     <>
-      <Header />
+      <Header page='Home' isSBOpen={isSBOpen} setIsSBOpen={setIsSBOpen} />
       <section className={styles.section1}>
         <Layout>
           <div className={styles.s1Wrap}>
@@ -42,6 +44,7 @@ export function Home() {
             </ul>
           </div>
         </Layout>
+        <SideBar isSBOpen={isSBOpen} />
       </section>
       <section>
         <Layout>Секция-2</Layout>

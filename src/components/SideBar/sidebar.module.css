@@ -1,0 +1,10 @@
+.sideBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+}
+
+.dpnone {
+  display: none;
+}
