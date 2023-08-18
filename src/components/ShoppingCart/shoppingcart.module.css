@@ -1,13 +1,20 @@
 .container {
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
   position: relative;
 }
 .amount {
   position: absolute;
-  top: -10px;
-  right: -20px;
+  top: -7px;
+  right: -19px;
   width: 20px;
+  color: #141820;
+  text-align: center;
+  /* font-family: Orbitron; */
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 163.636% */
   color: #000;
   background-color: #fff;
-  border-radius: 100%;
+  border-radius: 45%;
 }
