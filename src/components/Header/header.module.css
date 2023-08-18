@@ -58,6 +58,9 @@
   margin-right: 40px;
   padding-top: 2px;
 }
+.menuIcon {
+  display: none;
+}
 
 @media (max-width: 1199px) {
   .container {
@@ -82,5 +85,8 @@
 @media (max-width: 991px) {
   .menuUl {
     display: none;
+  }
+  .menuIcon {
+    display: block;
   }
 }

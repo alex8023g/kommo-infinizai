@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './header.module.css';
 import { Layout } from '../Layout';
 import { ReactComponent as Logo } from '../../img/logo.svg';
+import { ReactComponent as Menu } from '../../img/menu.svg';
 import cx from 'classnames';
 import classNames from 'classnames/bind';
 
@@ -48,6 +49,9 @@ export function Header() {
             <ShoppingCart />
           </div>
           <Button1 />
+          <div className={styles.menuIcon}>
+            <Menu />
+          </div>
         </div>
       </Layout>
     </header>
