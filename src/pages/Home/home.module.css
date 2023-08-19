@@ -111,6 +111,7 @@
   padding-top: 83px;
   /* padding-left: 150px; */
   max-width: 596px;
+  /* background-image: url('../../img/character-1.png'); */
 }
 .s2h2 {
   padding-top: 14px;
@@ -138,7 +139,7 @@
 
 .tabs {
   display: flex;
-  margin-bottom: 60px;
+  margin-bottom: 83px;
   overflow-x: scroll;
 }
 
@@ -148,19 +149,22 @@
   min-width: 175px;
   min-height: 104px;
   border-radius: 20px;
-  background: #fff;
+  background: #2a313c;
+}
+.activeTab {
+  background-color: #3b3d46;
 }
 .mr8 {
 }
 .tab1 {
-  height: 100%;
-  background-image: url('../../img/char-min-1.png');
-  /* background-repeat: no-repeat; */
+  /* height: 100%; */
+  background-image: url('../../img/character-1.png');
+  background-repeat: no-repeat;
   /* background-size: contain; */
 }
 .tab2 {
-  height: 100%;
-  background-image: url('../../img/char-min-2.png');
+  /* height: 100%; */
+  background-image: url('../../img/character-2.png');
   background-repeat: no-repeat;
   /* background-size: contain; */
 }
@@ -170,7 +174,13 @@
 }
 .tab3 {
   height: 100%;
-  background-image: url('../../img/char-min-3.png');
+  background-image: url('../../img/character-3.png');
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+}
+.tab4 {
+  height: 100%;
+  background-image: url('../../img/character-4.png');
   background-repeat: no-repeat;
   /* background-size: contain; */
 }

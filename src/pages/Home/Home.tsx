@@ -26,6 +26,7 @@ const tabData = [
 ].map((item) => ({ ...item, id: nanoid() }));
 
 const chars = [imgChar1, imgChar2, imgChar3, imgChar4];
+const chars2 = ['tab1', 'tab2', 'tab3', 'tab4'];
 
 export function Home() {
   const [isSBOpen, setIsSBOpen] = useState(false);
@@ -71,9 +72,9 @@ export function Home() {
       </section>
       <section className={styles.section2}>
         <Layout>
-          <div className={styles.s2Wrap}>
-            <div className={styles.s2Empty}>
-              <img src={chars[activeChar]} alt='' />
+          <div className={cx(styles.s2Wrap, styles[chars2[activeChar]])}>
+            <div className={cx(styles.s2Empty, styles[chars2[activeChar]])}>
+              {/* <img src={chars[activeChar]} alt='' /> */}
             </div>
             <div className={styles.s2Content}>
               <div className={styles.futureWrap}>
@@ -90,7 +91,7 @@ export function Home() {
                 {tabData.map(({ id, src }, i) => (
                   <li
                     key={id}
-                    className={cx(styles.tab, styles.mr8)}
+                    className={cx(styles.tab, { [styles.activeTab]: i === activeChar })}
                     onClick={() => {
                       setActiveChar(i);
                       console.log(i);
@@ -99,7 +100,6 @@ export function Home() {
                     <img src={src} alt='' />
                   </li>
                 ))}
-                ?
               </ul>
             </div>
           </div>
