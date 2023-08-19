@@ -9,21 +9,15 @@ import classNames from 'classnames/bind';
 import { Button1 } from '../Button1';
 import { ShoppingCart } from '../ShoppingCart';
 import { nanoid } from 'nanoid';
-import { menuData } from '../../App';
+import { MenuData } from '../../App';
 
 interface Props {
-  page: string;
+  menuData: MenuData[];
   isSBOpen: boolean;
   setIsSBOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export function Header({ page, isSBOpen, setIsSBOpen }: Props) {
-  const homeMData = menuData.map((item) =>
-    item.name === page ? { ...item, isActive: true } : { ...item, isActive: false }
-  );
-
-  console.log(menuData);
-
+export function Header({ menuData, isSBOpen, setIsSBOpen }: Props) {
   return (
     <header className={styles.header}>
       <Layout>
@@ -38,7 +32,7 @@ export function Header({ page, isSBOpen, setIsSBOpen }: Props) {
             <li className={cx(styles.menuLi, styles.menuLi2)}>Team</li>
             <li className={cx(styles.menuLi, styles.menuLi2)}>Shop</li>
           <li className={cx(styles.menuLi)}>Pages</li> */}
-            {homeMData.map((item) => (
+            {menuData.map((item) => (
               <li key={item.id} className={cx(styles.menuLi, styles.menuLi2)}>
                 <a
                   className={cx(styles.menuA, { [styles.active]: item.isActive })}
@@ -53,7 +47,7 @@ export function Header({ page, isSBOpen, setIsSBOpen }: Props) {
           <div className={styles.shoppingCart}>
             <ShoppingCart />
           </div>
-          <Button1 />
+          <Button1 text='Contact Us' />
           <button
             className={styles.menuIcon}
             onClick={() => {

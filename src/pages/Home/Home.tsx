@@ -7,12 +7,16 @@ import { Button2 } from '../../components/Button2';
 import { Link } from 'react-router-dom';
 import cx from 'classnames';
 import { SideBar } from '../../components/SideBar';
+import { menuData } from '../../App';
 
 export function Home() {
   const [isSBOpen, setIsSBOpen] = useState(false);
+  const homeMData = menuData.map((item) =>
+    item.name === 'Home' ? { ...item, isActive: true } : { ...item, isActive: false }
+  );
   return (
     <>
-      <Header page='Home' isSBOpen={isSBOpen} setIsSBOpen={setIsSBOpen} />
+      <Header menuData={homeMData} isSBOpen={isSBOpen} setIsSBOpen={setIsSBOpen} />
       <section className={styles.section1}>
         <Layout>
           <div className={styles.s1Wrap}>
@@ -44,7 +48,7 @@ export function Home() {
             </ul>
           </div>
         </Layout>
-        <SideBar isSBOpen={isSBOpen} />
+        <SideBar isSBOpen={isSBOpen} menuData={homeMData} />
       </section>
       <section>
         <Layout>Секция-2</Layout>

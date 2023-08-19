@@ -5,7 +5,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { nanoid } from 'nanoid';
 
-export const menuData = [
+export interface MenuData {
+  id: string;
+  name: string;
+  href: string;
+  isActive: boolean;
+}
+
+export const menuData: MenuData[] = [
   { name: 'Home', href: '#', isActive: false },
   { name: 'About', href: '#', isActive: false },
   { name: 'Team', href: '#', isActive: false },
