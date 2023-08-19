@@ -30,10 +30,10 @@
   line-height: 16px; /* 100% */
   text-transform: uppercase;
 }
-.h2 {
+.s1h2 {
   margin-bottom: 45px;
   padding-top: 15px;
-  width: 656px;
+  max-width: 656px;
   color: #fff;
   /* font-family: Orbitron; */
   font-size: 72px;
@@ -44,7 +44,7 @@
 }
 .p1 {
   margin-bottom: 52px;
-  width: 615px;
+  max-width: 615px;
   color: #999;
   font-size: 18px;
   font-style: normal;
@@ -89,4 +89,108 @@
 }
 .mr50 {
   margin-right: 50px;
+}
+
+/* section-2 *************************** */
+
+.section2 {
+  background-color: #2a313c;
+}
+
+.s2Wrap {
+  display: flex;
+}
+
+.s2Empty {
+  flex-grow: 1;
+  font-size: 0;
+  /* background-image: url('../../img/character-1.png'); */
+}
+
+.s2Content {
+  padding-top: 83px;
+  /* padding-left: 150px; */
+  max-width: 596px;
+}
+.s2h2 {
+  padding-top: 14px;
+  margin-bottom: 39px;
+  /* max-width: 656px; */
+  color: #fff;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115.625%;
+  text-transform: capitalize;
+  /* letter-spacing: 0.1px; */
+}
+
+.s2p1 {
+  margin-bottom: 52px;
+  max-width: 561px;
+  color: rgba(223, 223, 223, 0.8);
+  /* font-family: Orbitron; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 60px;
+  overflow-x: scroll;
+}
+
+.tab {
+  margin-right: 8px;
+  padding: 11px 11px 8px 11px;
+  min-width: 175px;
+  min-height: 104px;
+  border-radius: 20px;
+  background: #fff;
+}
+.mr8 {
+}
+.tab1 {
+  height: 100%;
+  background-image: url('../../img/char-min-1.png');
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+}
+.tab2 {
+  height: 100%;
+  background-image: url('../../img/char-min-2.png');
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+}
+.tabImg {
+  height: 100%;
+  width: 100%;
+}
+.tab3 {
+  height: 100%;
+  background-image: url('../../img/char-min-3.png');
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+}
+@media (max-width: 991px) {
+  .s1Wrap {
+    background-image: none;
+  }
+  .futureSpan {
+    font-size: 10px;
+  }
+  .h2 {
+    font-size: 48px;
+    line-height: 55px;
+  }
+  .p1 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .ourTeam {
+    font-size: 12px;
+    line-height: 155.556%;
+  }
 }

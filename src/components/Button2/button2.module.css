@@ -8,3 +8,12 @@
   text-transform: capitalize;
   background-color: #57b8ff;
 }
+
+@media (max-width: 991px) {
+  .btn {
+    padding: 14px 23px;
+
+    font-size: 12px;
+    line-height: 155.556%;
+  }
+}
