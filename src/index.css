@@ -380,7 +380,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
-h2 {
+h2,
+h3,
+p {
   margin: 0;
 }
 

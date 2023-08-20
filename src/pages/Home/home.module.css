@@ -31,6 +31,7 @@
   text-transform: uppercase;
 }
 .s1h2 {
+  position: relative;
   margin-bottom: 45px;
   padding-top: 15px;
   max-width: 656px;
@@ -41,6 +42,11 @@
   font-weight: 400;
   line-height: 86px; /* 119.444% */
   text-transform: capitalize;
+}
+.underline {
+  position: absolute;
+  top: 128px;
+  left: 218px;
 }
 .p1 {
   margin-bottom: 52px;
@@ -184,6 +190,144 @@
   background-repeat: no-repeat;
   /* background-size: contain; */
 }
+
+/* section-3 *************************** */
+
+.section3 {
+  padding-top: 130px;
+  padding-bottom: 125px;
+  background-color: #000;
+}
+
+.s3top {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 63px;
+}
+.s3topLeft {
+  margin-right: auto;
+}
+.s3h2 {
+  padding-top: 14px;
+  margin-bottom: 3px;
+  max-width: 541px;
+  color: #fff;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115.625%;
+  text-transform: capitalize;
+  /* letter-spacing: 0.1px; */
+}
+
+.s3content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 25% 25% 25% 25%; */
+  grid-template-areas:
+    'gamepad gamepad gamer pc'
+    'gamepad gamepad keyboard eva';
+  grid-gap: 24px;
+  color: #fff;
+}
+.gamepad {
+  grid-area: gamepad;
+  /* padding-top: 515px; */
+  /* background-image: url('../../img/gamepad.png');
+  background-repeat: no-repeat; */
+}
+.gamepadImg {
+  height: 515px;
+  border-radius: 30px;
+  background-image: url('../../img/gamepad.png');
+  background-repeat: no-repeat;
+}
+.gamer {
+  grid-area: gamer;
+}
+
+.gamerImg {
+  padding-top: 204px;
+  border-radius: 20px;
+  background-image: url('../../img/gamer.png');
+  background-repeat: no-repeat;
+  background-position: 0 10px;
+}
+.pc {
+  grid-area: pc;
+}
+.pcImg {
+  padding-top: 204px;
+  border-radius: 20px;
+  background-image: url('../../img/pc.png');
+  background-repeat: no-repeat;
+  background-position: 0 10px;
+}
+.keyboard {
+  grid-area: keyboard;
+}
+.keyboardImg {
+  padding-top: 190px;
+  border-radius: 20px;
+  background-image: url('../../img/keyboard.png');
+  background-repeat: no-repeat;
+}
+.eva {
+  grid-area: eva;
+}
+.evaImg {
+  padding-top: 190px;
+  border-radius: 20px;
+  background-image: url('../../img/eva.png');
+  background-repeat: no-repeat;
+}
+.datev1 {
+  padding-top: 50px;
+  color: #57b8ff;
+  /* font-family: Orbitron; */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+}
+.datev2 {
+  padding-left: 1px;
+  padding-top: 27px;
+  color: #57b8ff;
+  /* font-family: Orbitron; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.4px;
+}
+.h3v1 {
+  padding-top: 30px;
+  color: #fff;
+  /* font-family: Orbitron; */
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px; /* 127.778% */
+  text-transform: capitalize;
+}
+.h3v2 {
+  margin-bottom: 14px;
+  padding-top: 20px;
+  padding-left: 1px;
+  max-width: 290px;
+  color: #fff;
+  /* font-family: Orbitron; */
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 147.826%;
+  text-transform: capitalize;
+  /* letter-spacing: 1px; */
+}
+/* end section-3 *************************** */
+
 @media (max-width: 991px) {
   .s1Wrap {
     background-image: none;
