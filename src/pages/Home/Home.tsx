@@ -31,7 +31,7 @@ const tabData = [
   { id: '', src: imgCharMin4 },
 ].map((item) => ({ ...item, id: nanoid() }));
 
-const chars = [imgChar1, imgChar2, imgChar3, imgChar4];
+// const chars = [imgChar1, imgChar2, imgChar3, imgChar4];
 const chars2 = ['tab1', 'tab2', 'tab3', 'tab4'];
 
 export function Home() {
@@ -50,7 +50,7 @@ export function Home() {
               <Flame />
               <span className={styles.futureSpan}>FUTURE OF eSPORTS</span>
             </div>
-            <h2 className={styles.s1h2}>
+            <h2 className={styles.h1}>
               Unleash the Next Generation of Gaming
               <div className={styles.underline}>
                 <Underline />
@@ -92,7 +92,7 @@ export function Home() {
                 <Flame />
                 <span className={styles.futureSpan}>FUTURE OF eSPORTS</span>
               </div>
-              <h2 className={styles.s2h2}>Customize your Own Character</h2>
+              <h2 className={cx(styles.h2, styles.s2h2)}>Customize your Own Character</h2>
               <p className={styles.s2p1}>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
@@ -123,7 +123,7 @@ export function Home() {
                 <Flame />
                 <span className={styles.futureSpan}>FUTURE OF eSPORTS</span>
               </div>
-              <h2 className={styles.s3h2}>Latest News & Articles</h2>
+              <h2 className={cx(styles.h2, styles.s3h2)}>Latest News & Articles</h2>
             </div>
             <Button2 name='Read More' />
           </div>
@@ -132,33 +132,43 @@ export function Home() {
               {/* <img src={imgGamepad} alt='' /> */}
               <div className={styles.gamepadImg}></div>
               <p className={styles.datev1}>April 2.2021</p>
-              <h3 className={styles.h3v1}>
-                Esports Group teams up with the Indianapolis Colts
-              </h3>
+              <Link to='#'>
+                <h3 className={styles.h3v1}>
+                  Esports Group teams up with the Indianapolis Colts
+                </h3>
+              </Link>
             </div>
             <div className={styles.gamer}>
               {/* <img src={imgGamer} alt='' /> */}
               <div className={styles.gamerImg}></div>
               <p className={styles.datev2}>April 2.2021</p>
-              <h3 className={styles.h3v2}>NAVI reveals s1mple fifth anniversary</h3>
+              <Link to='#'>
+                <h3 className={styles.h3v2}>NAVI reveals s1mple fifth anniversary</h3>
+              </Link>
             </div>
             <div className={styles.pc}>
               {/* <img src={imgPc} alt='' /> */}
               <div className={styles.pcImg}></div>
               <p className={styles.datev2}>April 2.2021</p>
-              <h3 className={styles.h3v2}>A1esports Shares new picture</h3>
+              <Link to='#'>
+                <h3 className={styles.h3v2}>A1esports Shares new picture</h3>
+              </Link>
             </div>
             <div className={styles.keyboard}>
               {/* <img src={imgKeyboard} alt='' /> */}
               <div className={styles.keyboardImg}></div>
               <p className={styles.datev2}>April 2.2021</p>
-              <h3 className={styles.h3v2}>T1 unveil partnership with Razer</h3>
+              <Link to='#'>
+                <h3 className={styles.h3v2}>T1 unveil partnership with Razer</h3>
+              </Link>
             </div>
             <div className={styles.eva}>
               {/* <img src={imgEva} alt='' /> */}
               <div className={styles.evaImg}></div>
               <p className={styles.datev2}>April 2.2021</p>
-              <h3 className={styles.h3v2}>RX secures content partnership with</h3>
+              <Link to='#'>
+                <h3 className={styles.h3v2}>RX secures content partnership with</h3>
+              </Link>
             </div>
           </div>
         </Layout>

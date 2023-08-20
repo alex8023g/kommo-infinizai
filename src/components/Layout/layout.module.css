@@ -4,7 +4,7 @@
   max-width: 1320px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .layOut {
     padding: 0 15px;
   }

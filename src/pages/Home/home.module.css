@@ -1,7 +1,21 @@
-/* .header {
+/* general properties */
+
+body {
   color: #fff;
-  background: linear-gradient(to right, #000 54.5%, #57b8ff 0%);
-} */
+}
+
+.h2 {
+  color: #fff;
+  font-size: 64px;
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  line-height: 115.625%;
+  text-transform: capitalize;
+}
+
+/* end general properties */
+
+/* section-1 ******************************** */
 .section1 {
   position: relative;
   padding-top: 210px;
@@ -25,22 +39,21 @@
   padding-top: 6px;
   color: #57b8ff;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px; /* 100% */
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  line-height: 100%;
   text-transform: uppercase;
 }
-.s1h2 {
+.h1 {
   position: relative;
   margin-bottom: 45px;
   padding-top: 15px;
   max-width: 656px;
-  color: #fff;
-  /* font-family: Orbitron; */
+  /* color: #fff; */
   font-size: 72px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 86px; /* 119.444% */
+  /* font-style: normal;
+  font-weight: 400; */
+  line-height: 119.444%;
   text-transform: capitalize;
 }
 .underline {
@@ -55,15 +68,15 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 155.556% */
+  line-height: 155.556%;
 }
 .ourTeam {
   padding-left: 41px;
-  color: #fff;
+  /* color: #fff; */
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 155.556% */
+  /* font-style: normal;
+  font-weight: 400; */
+  line-height: 155.556%;
 }
 .socialUl {
   /* outline: 1px solid coral; */
@@ -82,9 +95,9 @@
   /* transform: rotate(180deg); */
   color: #80858f;
   font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25px; /* 250% */
+  /* font-style: normal;
+  font-weight: 400; */
+  line-height: 250%;
   letter-spacing: 0.7px;
 }
 /* .socialLi:not(:last-child) {
@@ -96,8 +109,9 @@
 .mr50 {
   margin-right: 50px;
 }
+/* end section-1 ******************************** */
 
-/* section-2 *************************** */
+/* section-2 ****************************** */
 
 .section2 {
   background-color: #2a313c;
@@ -122,14 +136,12 @@
 .s2h2 {
   padding-top: 14px;
   margin-bottom: 39px;
-  /* max-width: 656px; */
-  color: #fff;
+  /* color: #fff;
   font-size: 64px;
   font-style: normal;
   font-weight: 400;
   line-height: 115.625%;
-  text-transform: capitalize;
-  /* letter-spacing: 0.1px; */
+  text-transform: capitalize; */
 }
 
 .s2p1 {
@@ -138,9 +150,9 @@
   color: rgba(223, 223, 223, 0.8);
   /* font-family: Orbitron; */
   font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px; /* 150% */
+  /* font-style: normal;
+  font-weight: 400; */
+  line-height: 150%;
 }
 
 .tabs {
@@ -160,36 +172,32 @@
 .activeTab {
   background-color: #3b3d46;
 }
-.mr8 {
-}
-.tab1 {
-  /* height: 100%; */
-  background-image: url('../../img/character-1.png');
-  background-repeat: no-repeat;
-  /* background-size: contain; */
-}
-.tab2 {
-  /* height: 100%; */
-  background-image: url('../../img/character-2.png');
-  background-repeat: no-repeat;
-  /* background-size: contain; */
-}
-.tabImg {
+/* .mr8 {
+} */
+/* .tabImg {
   height: 100%;
   width: 100%;
+} */
+.tab1 {
+  background-image: url('../../img/character-1.png');
+  background-repeat: no-repeat;
 }
+.tab2 {
+  background-image: url('../../img/character-2.png');
+  background-repeat: no-repeat;
+}
+
 .tab3 {
   height: 100%;
   background-image: url('../../img/character-3.png');
   background-repeat: no-repeat;
-  /* background-size: contain; */
 }
 .tab4 {
   height: 100%;
   background-image: url('../../img/character-4.png');
   background-repeat: no-repeat;
-  /* background-size: contain; */
 }
+/* end section-2 ****************************** */
 
 /* section-3 *************************** */
 
@@ -211,24 +219,23 @@
   padding-top: 14px;
   margin-bottom: 3px;
   max-width: 541px;
-  color: #fff;
+  /* color: #fff;
   font-size: 64px;
   font-style: normal;
   font-weight: 400;
   line-height: 115.625%;
-  text-transform: capitalize;
+  text-transform: capitalize; */
   /* letter-spacing: 0.1px; */
 }
 
 .s3content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* grid-template-columns: 25% 25% 25% 25%; */
   grid-template-areas:
     'gamepad gamepad gamer pc'
     'gamepad gamepad keyboard eva';
   grid-gap: 24px;
-  color: #fff;
+  /* color: #fff; */
 }
 .gamepad {
   grid-area: gamepad;
@@ -247,6 +254,7 @@
 }
 
 .gamerImg {
+  /* outline: 1px solid coral; */
   padding-top: 204px;
   border-radius: 20px;
   background-image: url('../../img/gamer.png');
@@ -257,6 +265,7 @@
   grid-area: pc;
 }
 .pcImg {
+  /* outline: 1px solid coral; */
   padding-top: 204px;
   border-radius: 20px;
   background-image: url('../../img/pc.png');
@@ -286,8 +295,8 @@
   color: #57b8ff;
   /* font-family: Orbitron; */
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
+  /* font-style: normal;
+  font-weight: 400; */
   line-height: 100%;
   letter-spacing: 0.5px;
 }
@@ -297,8 +306,8 @@
   color: #57b8ff;
   /* font-family: Orbitron; */
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
+  /* font-style: normal;
+  font-weight: 400; */
   line-height: 100%;
   letter-spacing: 0.4px;
 }
@@ -307,9 +316,9 @@
   color: #fff;
   /* font-family: Orbitron; */
   font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 46px; /* 127.778% */
+  /* font-style: normal;
+  font-weight: 400; */
+  line-height: 127.778%;
   text-transform: capitalize;
 }
 .h3v2 {
@@ -320,8 +329,8 @@
   color: #fff;
   /* font-family: Orbitron; */
   font-size: 23px;
-  font-style: normal;
-  font-weight: 400;
+  /* font-style: normal;
+  font-weight: 400; */
   line-height: 147.826%;
   text-transform: capitalize;
   /* letter-spacing: 1px; */
@@ -329,22 +338,107 @@
 /* end section-3 *************************** */
 
 @media (max-width: 991px) {
+  /* general properties */
+  .h2 {
+    font-size: 43px;
+  }
+  /* end general properties */
+
+  /* section-1 *************************** */
+
+  .section1 {
+    padding: 100px 0;
+  }
   .s1Wrap {
     background-image: none;
   }
   .futureSpan {
     font-size: 10px;
   }
-  .h2 {
+  .h1 {
     font-size: 48px;
-    line-height: 55px;
+  }
+  .underline {
+    display: none;
   }
   .p1 {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
   }
   .ourTeam {
     font-size: 12px;
     line-height: 155.556%;
   }
+
+  /* end section-1 *************************** */
+
+  /* section-2 *************************** */
+
+  .s2p1 {
+    font-size: 14px;
+  }
+
+  /* end section-2 *************************** */
+
+  /* section-3 *************************** */
+  .section3 {
+    padding: 100px 0;
+  }
+  .s3top {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .s3h2 {
+    margin-bottom: 20px;
+  }
+  .s3content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'gamepad gamepad  '
+      'gamepad gamepad  '
+      'gamer pc'
+      'keyboard eva';
+  }
+  .datev1 {
+    font-size: 14px;
+  }
+  .datev2 {
+    font-size: 12px;
+  }
+  .h3v1 {
+    font-size: 24px;
+  }
+  .h3v2 {
+    font-size: 16px;
+  }
+  /* end section-3 *************************** */
+}
+
+@media (max-width: 767px) {
+  .tabs {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  /* section-3 *************************** */
+  .s3content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'gamepad'
+      'gamer'
+      'pc'
+      'keyboard'
+      'eva';
+    justify-content: center;
+  }
+  .gamerImg,
+  .pcImg,
+  .keyboardImg,
+  .evaImg {
+    background-size: cover;
+  }
+  /* end section-3 *************************** */
 }
