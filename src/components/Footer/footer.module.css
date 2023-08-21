@@ -43,6 +43,15 @@
     gap: 0;
     justify-content: space-between;
   }
+  .p {
+    font-size: 12px;
+  }
+  .h4 {
+    font-size: 15px;
+  }
+  .menuItems {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -50,7 +59,7 @@
     padding: 30px 0;
   }
   .wrap {
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-between;
   }
   .firsBlock {
@@ -58,11 +67,15 @@
   }
   .h4 {
     margin-bottom: 10px;
+    font-size: 12px;
   }
   .menuItems {
     margin-bottom: 20px;
   }
   .pages {
     padding: 0;
+  }
+  .menuItem {
+    font-size: 10px;
   }
 }

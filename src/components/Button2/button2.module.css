@@ -17,3 +17,9 @@
     line-height: 155.556%;
   }
 }
+
+@media (max-width: 575px) {
+  .btn {
+    font-size: 10px;
+  }
+}
