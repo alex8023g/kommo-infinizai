@@ -28,11 +28,6 @@ export function Header({ menuData, isSBOpen, setIsSBOpen }: Props) {
           </div>
           <div className={styles.buff1}></div>
           <ul className={styles.menuUl}>
-            {/* <li className={cx(styles.menuLi, styles.menuLi2)}>Home</li>
-            <li className={cx(styles.menuLi, styles.menuLi2)}>About</li>
-            <li className={cx(styles.menuLi, styles.menuLi2)}>Team</li>
-            <li className={cx(styles.menuLi, styles.menuLi2)}>Shop</li>
-          <li className={cx(styles.menuLi)}>Pages</li> */}
             {menuData.map((item) => (
               <li
                 className={cx(styles.menuA, { [styles.active]: item.isActive })}
@@ -40,14 +35,6 @@ export function Header({ menuData, isSBOpen, setIsSBOpen }: Props) {
               >
                 <Link to={item.href}>{item.name}</Link>
               </li>
-              // <li key={item.id} className={cx(styles.menuLi, styles.menuLi2)}>
-              //   <a
-              //     className={cx(styles.menuA, { [styles.active]: item.isActive })}
-              //     href={item.href}
-              //   >
-              //     {item.name}
-              //   </a>
-              // </li>
             ))}
           </ul>
           <div className={styles.buff2}></div>

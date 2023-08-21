@@ -1,11 +1,4 @@
-/* @font-face {
-  font-family: 'Orbitron';
-  src: local('Orbitron'), url('../../fonts/Orbitron.ttf') format('ttf');
-  font-style: normal;
-} */
-
 .header {
-  /* outline: 1px solid coral; */
   padding-top: 20px;
   color: #fff;
   background: linear-gradient(to right, #000 54.5%, #57b8ff 0%);
@@ -17,7 +10,6 @@
   align-items: center;
 }
 .logo {
-  /* margin-right: 119px; */
   padding-top: 5px;
 }
 .buff1 {
@@ -29,21 +21,14 @@
 .menuUl {
   display: flex;
   padding: 1px 90.281px 0px 89.781px;
-  /* height: 26px; */
   justify-content: center;
   align-items: flex-start;
   gap: 60px;
   flex-shrink: 0;
 }
-.menuLi {
-}
-.menuLi2 {
-  /* margin-right: 60px; */
-}
+
 .menuA {
-  /* color: red; */
   color: #fff;
-  /* font-family: 'Orbitron'; */
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

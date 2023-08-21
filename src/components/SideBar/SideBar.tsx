@@ -17,7 +17,6 @@ export function SideBar({ isSBOpen, menuData }: Props) {
           <Link to={item.href}>{item.name}</Link>
         </li>
       ))}
-      {/* <li>---------</li> */}
       <li className={styles.li}>Contact Us</li>
     </ul>
   );

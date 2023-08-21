@@ -24,18 +24,10 @@ export const menuData: MenuData[] = [
 function App() {
   return (
     <BrowserRouter>
-      {/* <Header2 /> */}
-      {/* <Layout> */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        {/* <Route path='account/:account' element={<AccountPage />} />
-          <Route path='atm' element={<AtmPage />} />
-          <Route path='login' element={<LoginPage />} />
-          <Route path='currency' element={<CurrencyPage />} />
-          <Route path='balance/:account' element={<BalancePage />} /> */}
       </Routes>
-      {/* </Layout> */}
     </BrowserRouter>
   );
 }
