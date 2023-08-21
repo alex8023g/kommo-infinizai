@@ -23,7 +23,7 @@ export function Footer() {
     <footer className={styles.footer}>
       <Layout>
         <div className={styles.wrap}>
-          <div>
+          <div className={styles.firsBlock}>
             <Logo />
             <p className={styles.p}>
               Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl nunc quam ac
