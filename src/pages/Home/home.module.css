@@ -9,7 +9,8 @@ body {
   font-size: 64px;
   /* font-style: normal; */
   /* font-weight: 400; */
-  line-height: 115.625%;
+  /* line-height: 115.625%; */
+  line-height: 114%;
   text-transform: capitalize;
 }
 
@@ -53,7 +54,8 @@ body {
   font-size: 72px;
   /* font-style: normal;
   font-weight: 400; */
-  line-height: 119.444%;
+  /* line-height: 119.444%; */
+  line-height: 120%;
   text-transform: capitalize;
 }
 .underline {
@@ -276,6 +278,7 @@ body {
   grid-area: keyboard;
 }
 .keyboardImg {
+  margin-bottom: 3px;
   padding-top: 190px;
   border-radius: 20px;
   background-image: url('../../img/keyboard.png');
@@ -285,6 +288,7 @@ body {
   grid-area: eva;
 }
 .evaImg {
+  margin-bottom: 3px;
   padding-top: 190px;
   border-radius: 20px;
   background-image: url('../../img/eva.png');
