@@ -23,6 +23,7 @@ import imgPc from '../../img/pc.png';
 import imgKeyboard from '../../img/keyboard.png';
 import imgEva from '../../img/eva.png';
 import { nanoid } from 'nanoid';
+import { Footer } from '../../components/Footer';
 
 const tabData = [
   { id: '', src: imgCharMin1 },
@@ -173,9 +174,7 @@ export function Home() {
           </div>
         </Layout>
       </section>
-      <footer>
-        <Layout>Footer</Layout>
-      </footer>
+      <Footer />
     </>
   );
 }
