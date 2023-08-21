@@ -4,6 +4,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { nanoid } from 'nanoid';
+import { About } from './pages/About';
 
 export interface MenuData {
   id: string;
@@ -13,8 +14,8 @@ export interface MenuData {
 }
 
 export const menuData: MenuData[] = [
-  { name: 'Home', href: '#', isActive: false },
-  { name: 'About', href: '#', isActive: false },
+  { name: 'Home', href: '/', isActive: false },
+  { name: 'About', href: '/about', isActive: false },
   { name: 'Team', href: '#', isActive: false },
   { name: 'Shop', href: '#', isActive: false },
   { name: 'Pages', href: '#', isActive: false },
@@ -27,6 +28,7 @@ function App() {
       {/* <Layout> */}
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
         {/* <Route path='account/:account' element={<AccountPage />} />
           <Route path='atm' element={<AtmPage />} />
           <Route path='login' element={<LoginPage />} />

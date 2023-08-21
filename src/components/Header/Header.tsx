@@ -10,6 +10,7 @@ import { Button1 } from '../Button1';
 import { ShoppingCart } from '../ShoppingCart';
 import { nanoid } from 'nanoid';
 import { MenuData } from '../../App';
+import { Link } from 'react-router-dom';
 
 interface Props {
   menuData: MenuData[];
@@ -33,14 +34,20 @@ export function Header({ menuData, isSBOpen, setIsSBOpen }: Props) {
             <li className={cx(styles.menuLi, styles.menuLi2)}>Shop</li>
           <li className={cx(styles.menuLi)}>Pages</li> */}
             {menuData.map((item) => (
-              <li key={item.id} className={cx(styles.menuLi, styles.menuLi2)}>
-                <a
-                  className={cx(styles.menuA, { [styles.active]: item.isActive })}
-                  href={item.href}
-                >
-                  {item.name}
-                </a>
+              <li
+                className={cx(styles.menuA, { [styles.active]: item.isActive })}
+                key={item.id}
+              >
+                <Link to={item.href}>{item.name}</Link>
               </li>
+              // <li key={item.id} className={cx(styles.menuLi, styles.menuLi2)}>
+              //   <a
+              //     className={cx(styles.menuA, { [styles.active]: item.isActive })}
+              //     href={item.href}
+              //   >
+              //     {item.name}
+              //   </a>
+              // </li>
             ))}
           </ul>
           <div className={styles.buff2}></div>
